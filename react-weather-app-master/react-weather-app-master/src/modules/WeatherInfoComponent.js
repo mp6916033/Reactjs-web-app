@@ -110,7 +110,6 @@ const WeatherComponent = (props) => {
                                       value={`${getTime(weather?.sys[isDay ? "sunset" : "sunrise"])}`}/>
                 <WeatherInfoComponent name={"humidity"} value={weather?.main?.humidity}/>
                 <WeatherInfoComponent name={"wind"} value={weather?.wind?.speed}/>
-                <WeatherInfoComponent name={"pressure"} value={weather?.main?.pressure}/>
             </WeatherInfoContainer>
         </>
     );
